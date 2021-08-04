@@ -12,7 +12,7 @@ def get_date(str_date: str) -> dt.datetime:
 
 def calc_days(start_date: dt.date, end_date: dt.date) -> int:
     """
-    returns diffrent in days by integer
+    returns the diffrence of days by integer
     """
     return (end_date - start_date).days
 
@@ -21,7 +21,7 @@ def calc(sum_insurance: int, percent: float, days: int) -> float:
     """
     function calculate sum insured 
     by the end of insurance contract
-    and returns sum in float type
+    and returns sum by float type
     """
     while days > 0:
         sum_insurance -= sum_insurance * (percent / 100)
@@ -32,7 +32,7 @@ def calc(sum_insurance: int, percent: float, days: int) -> float:
 def get_sum_insurance() -> int:
     """
     get the value of the car,
-    return the sum as a number
+    return the sum by integer
     """
     sum_insured = 0
     input_text = input('Input the sum insured represented in insurance contract\n'
